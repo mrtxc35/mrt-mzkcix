@@ -12,7 +12,7 @@ provider:
 
 functions:
   post:
-    handler: handler.hello
+    handler: murti.py
     events:
       - http:
           path: my-custom-url
