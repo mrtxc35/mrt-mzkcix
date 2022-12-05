@@ -68,7 +68,8 @@ def help(client, message):
                     InlineKeyboardButton('✨ Destek', url=f'https://t.me/pubglitefucker'),
                     InlineKeyboardButton('🍃 Tagger Bot', url=f'https://t.me/stor_tagger_bot')
                   ],[
-                    InlineKeyboardButton('🎮 Oyun  Botumuz', url=f"https://t.me/hesap_game_bot')
+                    InlineKeyboardButton('🎮 Oyun  Botumuz', url=f'://t.me/hesap_game_bot')
+
                 ]
             ]
         )
