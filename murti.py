@@ -81,9 +81,6 @@ async def live(client: Client, message: Message):
     livemsg = await message.reply_text('`Selam @erdem4455vip Emrindeyim 🌹`')
     
 #muzik indirme#
-@bot.on_message(filters.command('botbilgi'))
-def botbilgi(_, message):
-bot.send_message(message.chat.id,"𝐤𝐨𝐝𝐥𝐚𝐧𝐝𝛊𝐠̆𝛊𝐦 𝐝𝐢𝐥 : 𝐩𝐲𝐭𝐡𝐨𝐧\n 𝗿𝗲𝗽𝗼 : __🚫 Benden alıp parayla sattıkları için kapandı__")
 @bot.on_message(filters.command("ara") & ~filters.edited)
 def bul(_, message):
     query = " ".join(message.command[1:])
