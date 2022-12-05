@@ -154,7 +154,7 @@ def bul(_, message):
             info_dict = ydl.extract_info(link, download=False)
             video_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"💽 [𝐯𝐢𝐝𝐞𝐨/𝐦𝐮𝐬𝐢𝐜 Bot](https://t.me/Music_installer31_bot) Sizin İçin Araştırdı!"
+        rep = f"💽 [𝐯𝐢𝐝𝐞𝐨/𝐦𝐮𝐬𝐢 Bot](https://t.me/Music_installer31_bot) Sizin İçin Araştırdı!"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
