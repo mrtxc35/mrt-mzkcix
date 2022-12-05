@@ -129,7 +129,7 @@ def bul(_, message):
         
         # video ya geçiş
 @bot.on_message(filters.command('arvid') & ~filters.edited)        
-message.reply_text("ᴠɪᴅᴇᴏ ʏᴜ̈ᴋʟᴇᴍᴇ ᴏ̈ᴢᴇʟʟɪɢ̆ɪ ʙᴇᴛᴀᴅɪʀ. ᑕ̧ᗩᒪIᔕ̧ᗰᗩYᗩᗷIᒪIᖇ...")
+
         def bulvid(_, message):
     query = " ".join(message.command[1:])
     e = message.reply("<b>• **Videoyu Arıyorum** ...</b>")
