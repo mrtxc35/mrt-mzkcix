@@ -31,7 +31,7 @@ async def start_(client: Client, message: Message):
             [[
                     InlineKeyboardButton('➕ Beni Gruba Ekle ➕', url=f'http://t.me/muzik_indiren_bot?startgroup=new'),
                   ],[
-                    InlineKeyboardButton('🏹 Grubumuz', url=f'https://t.me/vahsibatiTR'),
+                    InlineKeyboardButton('🏹 Grubumuz', url=f'https://t.me/SohbetGala'),
                     InlineKeyboardButton('🌹 Kanalımız', url=f'https://t.me/belkigununbirinde')
                   ],[
                     InlineKeyboardButton('👤 Sahip', url=f't.me/uslanmazmurti')
@@ -55,7 +55,7 @@ def help(client, message):
                     InlineKeyboardButton('✨ Destek', url=f'https://t.me/galasohbett'),
                     InlineKeyboardButton('🍃 Ana Bot', url=f'https://t.me/murtix_bot')
                   ],[
-                    InlineKeyboardButton('🎮 Oyun & Film Botumuz', url=f"https://t.me/inekgame_bot')
+                    InlineKeyboardButton('🏷 Oyun Film Botu', url=f'https://t.me/inekgame_bot')
                 ]
             ]
         )
