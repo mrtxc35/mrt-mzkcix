@@ -93,8 +93,7 @@ def bul(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"╠═════════════╣
- [👤 Sahibim](https://t.me/uslanmazmurti) \n╠═════════════╣ \n
+        rep = f"💡 [Sahibim](https://t.me/uslanmazmurti) \n╠═════════════╣ \n
 ╠ **🤖 Botlarım:** @murtibots                   ╣ \n╠═════════════╣ \n╠ **⚡ Bot:** [Mp3 İndiren Bot](https://t.me/muzik_indiren_bot) \n╠═════════════╣"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
