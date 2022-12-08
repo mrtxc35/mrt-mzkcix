@@ -52,10 +52,10 @@ def help(client, message):
             [[
                     InlineKeyboardButton('🎵 Playlist', url=f'http://t.me/playlistmp3murti'),
                   ],[
-                    InlineKeyboardButton('✨ Destek', url=f'https://t.me/galasohbett'),
+                    InlineKeyboardButton('☠ Botlarım', url=f'https://t.me/murtibots'),
                     InlineKeyboardButton('🍃 Ana Bot', url=f'https://t.me/murtix_bot')
                   ],[
-                    InlineKeyboardButton('🏷 Oyun Film Botu', url=f'https://t.me/inekgame_bot')
+                    InlineKeyboardButton('🎮 Oyun & Film Botumuz', url=f"https://t.me/inekgame_bot')
                 ]
             ]
         )
@@ -64,7 +64,7 @@ def help(client, message):
 
 @bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
 async def live(client: Client, message: Message):
-    livemsg = await message.reply_text('`Selam @uslanmazmurti Emrindeyim 🌹`')
+    livemsg = await message.reply_text('`Selam` **@uslanmazmurti** `Emrindeyim 🌹`')
     
 #muxik indirme#
 
@@ -93,7 +93,7 @@ def bul(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"💡[Sahibim](https://t.me/uslanmazmurti)\n\n╠═════════════╣ \n**⚡ Bot:** [Mp3 İndiren Bot](https://t.me/muzik_indiren_bot)"
+        rep = f"🎵 Config.MESAJ"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
