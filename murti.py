@@ -55,7 +55,7 @@ def help(client, message):
                     InlineKeyboardButton('☠ Botlarım', url=f'https://t.me/murtibots'),
                     InlineKeyboardButton('🍃 Ana Bot', url=f'https://t.me/murtix_bot')
                   ],[
-                    InlineKeyboardButton('🎮 Oyun & Film Botumuz', url=f"https://t.me/inekgame_bot')
+                    InlineKeyboardButton('🎮 Oyun & Film Botumuz', url=f'https://t.me/inekgame_bot')
                 ]
             ]
         )
