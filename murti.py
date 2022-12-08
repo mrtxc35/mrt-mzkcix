@@ -15,9 +15,9 @@ from pyrogram.types import (
 
 bot = Client(
     'moonBot',
-    bot_token = Config.BOT_TOKEN,
-    api_id = Config.API_ID,
-    api_hash = Config.API_HASH
+    bot_token = 5644947301:AAHHRRTc6JeuvcizG4p24qxlkziwD01SYbw,
+    api_id = 11385233,
+    api_hash = 16d51f2c856dec1c9abf7f4b31fb9d6e
 )
 
 #start mesajı
@@ -93,7 +93,7 @@ def bul(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"🎵 Config.MESAJ"
+        rep = f"🎵 {MESAJ}"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
@@ -101,7 +101,7 @@ def bul(_, message):
         m.edit("•> **Yüklüyorum**...")
         message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@uslanmazmurti")
         m.delete()
-        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=rep, performer="@uslanmazmurti", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
+        bot.send_audio(chat_id=-1001820185928, audio=audio_file, caption=rep, performer="@uslanmazmurti", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
     except Exception as e:
         m.edit("<b>⛔ **Hata Bekle Ve Tekrar Dene** .</b>")
         print(e)
