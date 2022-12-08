@@ -17,7 +17,7 @@ bot = Client(
     'moonBot',
     bot_token = "5644947301:AAHHRRTc6JeuvcizG4p24qxlkziwD01SYbw",
     api_id = "11385233",
-    api_hash = "16d51f2c856dec1c9abf7f4b31fb9d6e"
+    api_hash = "16d51f2c856dec1c9abf7f4b31fb9d6e",
 )
 
 #start mesajı
