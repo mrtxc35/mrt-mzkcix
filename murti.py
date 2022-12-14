@@ -24,7 +24,7 @@ bot = Client(
 
 @bot.on_message(filters.command(['start']))
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgQAACAgQAAxUAAWOTKOFUGOuft9AxnkDrsjLpc-0nAAI_DwACVbuYUHmThxR4Q9UoKwQ")
+    await message.reply_sticker("CAACAgQAAxUAAWOZxbh8fvEQpeLtX3NDcGNCs-iyAAI_DwACVbuYUHmThxR4Q9UoLAQ")
     await message.reply_text(
     f"""🥂 **Merhaba** {message.from_user.mention}\n\n**🎵 Ben Basit Bir Müzik İndirme Botuyum**\n\n**Yardıma İhtiyacın Varsa** /yardim **Komutunu Kullan**""",
         reply_markup=InlineKeyboardMarkup(
@@ -93,7 +93,7 @@ def bul(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**╠══════════════════╣\n●➠   [➕ BOTU GRUBA EKLE ➕](https://t.me/muzik_indiren_bot?startgroup=a)   ●\n\n╠══════════════════╣\n➥[🎵 Mp3 İndiren Bot](https://t.me/muzik_indiren_bot)\n➥[🎶 Çalma Listesi](https://t.me/PlayListMp3Murti)\n➥[🤖 Diğer Botlar](https://t.me/MurtiBots)\n╠══════════════════╣**"
+        rep = f"**╠══════════════════╣\n   [➕ BOTU GRUBA EKLE ➕](https://t.me/muzik_indiren_bot?startgroup=a)\n╠══════════════════╣\n➥[🎵 Mp3 İndiren Bot](https://t.me/muzik_indiren_bot)\n➥[🎶 Çalma Listesi](https://t.me/PlayListMp3Murti)\n➥[🤖 Diğer Botlar](https://t.me/MurtiBots)\n╠══════════════════╣**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
