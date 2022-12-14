@@ -15,7 +15,7 @@ from pyrogram.types import (
 
 bot = Client(
     'moonBot',
-    bot_token = "😄",
+    bot_token = "",
     api_id = "11385233",
     api_hash = "16d51f2c856dec1c9abf7f4b31fb9d6e",
 )
@@ -31,7 +31,7 @@ async def start_(client: Client, message: Message):
             [[
                     InlineKeyboardButton('➕ Beni Gruba Ekle ➕', url=f'http://t.me/muzik_indiren_bot?startgroup=new'),
                   ],[
-                    InlineKeyboardButton('🏹 Grubumuz', url=f'https://t.me/SohbetGala'),
+                    InlineKeyboardButton('🏹 Grubumuz', url=f'https://t.me/GalaSohbetTR'),
                     InlineKeyboardButton('🌹 Kanalımız', url=f'https://t.me/belkigununbirinde')
                   ],[
                     InlineKeyboardButton('👤 Sahip', url=f't.me/uslanmazmurti')
@@ -71,7 +71,7 @@ async def live(client: Client, message: Message):
 @bot.on_message(filters.command("ara") & ~filters.edited)
 def bul(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("<b>• **Şarkıyı Arıyorum** ...</b>")
+    m = message.reply("🔎")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -93,7 +93,7 @@ def bul(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"🎵 {MESAJ}"
+        rep = f"[➕ BOTU GRUBA EKLE ➕](https://t.me/muzik_indiren_bot?startgroup=a)\n\n╠══════════════════╣\n➥[🎵 Mp3 İndiren Bot](https://t.me/muzik_indiren_bot)\n➥[🎶 Çalma Listesi](https://t.me/PlayListMp3Murti)\n➥[🤖 Diğer Botlar](https://t.me/MurtiBots)\n╠══════════════════╣"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
