@@ -62,7 +62,7 @@ def help(client, message):
     )
 #alive#
 
-@bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
+@bot.on_message(filters.command("alive") & filters.user(5333072972))
 async def live(client: Client, message: Message):
     livemsg = await message.reply_text('`Selam` **@uslanmazmurti** `Emrindeyim 🌹`')
     
