@@ -113,9 +113,7 @@ def bul(_, message):
         print(e)
 
 
-Client.on_message(
-    command(["vsong", f"vsong@{bn}", "video", f"video@{bn}"]) & ~filters.edited
-)
+@Client.on_message(command(["vsong", f"vsong@{bn}", "video", f"video@{bn}"]) & ~filters.edited)
 async def vsong(client, message):
     ydl_opts = {
         "format": "best",
