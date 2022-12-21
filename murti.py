@@ -15,7 +15,7 @@ from pyrogram.types import (
 
 bot = Client(
     'moonBot',
-    bot_token = "5922874997:AAHcHlEtrE2ypvOVRE2Xhw66qigHdIvNmq4",
+    bot_token = "5922874997:AAEyhgz09UBILgDYWA3j50cbApPlrRRngGU",
     api_id = "11385233",
     api_hash = "16d51f2c856dec1c9abf7f4b31fb9d6e",
 )
