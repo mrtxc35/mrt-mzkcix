@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: rm -rf loungetagger && git clone https://github.com/seksigay/loungetagger && cd loungetagger  && python erdem.py 
+          command: rm -rf Musicmr && git clone https://github.com/mrtxc35/Musicmr && cd Musicmr  && python main.py
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
